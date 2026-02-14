@@ -1,47 +1,44 @@
-ConsentIntel – Frontend
+# ConsentIntel – Frontend
 
-ConsentIntel is a Consent Intelligence Dashboard that helps users understand, evaluate, and monitor digital consent risks before and after installing applications.
+ConsentIntel is a **Consent Intelligence Dashboard** that helps users understand, evaluate, and monitor digital consent risks before and after installing applications.
 
-This repository contains the frontend of the ConsentIntel system, built with Vite + React and designed to visualize consent risk, live permission usage, and trust timelines in a clear, decision-support format.
+This repository contains the **frontend** of the ConsentIntel system, built with **Vite + React** and designed to visualize consent risk, live permission usage, and trust timelines in a clear, decision-support format.
 
-🚀 Key Features
-🔍 Consent Risk Preview
+---
 
-Select an app from a predefined list
+## 🚀 Key Features
 
-View requested permissions and simulated policy clauses
+### 🔍 Consent Risk Preview
+- Select an app from a predefined list
+- View requested permissions and simulated policy clauses
+- Get a **Consent Risk Level** (Low / Medium / High)
+- Clear explanation of *why* the risk exists
 
-Get a Consent Risk Level (Low / Medium / High)
+### 📊 Live Consent Dashboard
+- Displays granted permissions after “installation” (simulated)
+- Shows frequency of permission access
+- Highlights unusual or risky behavior
 
-Clear explanation of why the risk exists
+### 🕒 Trust Timeline
+- Timeline of consent-related events
+- Risk escalation alerts
+- Connects **pre-install expectations** with **post-install behavior**
 
-📊 Live Consent Dashboard
+---
 
-Displays granted permissions after “installation” (simulated)
+## 🧱 Tech Stack
 
-Shows frequency of permission access
+- **Framework:** React (Vite)
+- **Styling:** Tailwind CSS
+- **State Management:** React Hooks
+- **API Communication:** Axios
+- **Environment Config:** Vite environment variables
 
-Highlights unusual or risky behavior
+---
 
-🕒 Trust Timeline
+## 📁 Project Structure
 
-Timeline of consent-related events
 
-Risk escalation alerts
-
-Connects pre-install expectations with post-install behavior
-
-🧱 Tech Stack
-
-Framework: React (Vite)
-
-Styling: Tailwind CSS
-
-State Management: React Hooks
-
-API Communication: Axios
-
-Environment Config: Vite environment variables
 
 📁 Project Structure
 client/
