@@ -28,7 +28,7 @@ This is the frontend for the Consent Intelligence Dashboard, built with **React*
    - Create a `.env` file in the `client` directory.
    - Add the backend URL:
      ```env
-     VITE_API_URL=http://localhost:5000/api
+     VITE_API_URL=http://localhost:5000/api,https://consentinter-backend.onrender.com
      ```
      *(Note: For production, use your deployed backend URL)*
 
@@ -38,7 +38,7 @@ Start the development server:
 ```bash
 npm run dev
 ```
-The app will typically run at `http://localhost:5173`.
+The app will typically run at `http://localhost:5173,https://consent-intel.vercel.app`.
 
 ## Build for Production
 
