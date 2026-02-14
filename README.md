@@ -1,107 +1,52 @@
-# ConsentIntel – Frontend
+# Consent Intelligence Dashboard - Frontend
 
-ConsentIntel is a **Consent Intelligence Dashboard** that helps users understand, evaluate, and monitor digital consent risks before and after installing applications.
+This is the frontend for the Consent Intelligence Dashboard, built with **React**, **Vite**, and **Tailwind CSS**. It provides the user interface for analyzing app risks, monitoring active consents, and viewing risk timelines.
 
-This repository contains the **frontend** of the ConsentIntel system, built with **Vite + React** and designed to visualize consent risk, live permission usage, and trust timelines in a clear, decision-support format.
+## Features
+- **Risk Preview**: Pre-install analysis of app permissions and policies.
+- **Live Dashboard**: Real-time monitoring of installed apps and global trust score.
+- **Timeline**: Visual history of permission access events.
+- **Simulations**: Interactive controls to trigger risk events (microphone access, dormant leaks).
 
----
+## Prerequisites
+- Node.js (v14+ recommended)
+- npm
 
-## 🚀 Key Features
+## Installation
 
-### 🔍 Consent Risk Preview
-- Select an app from a predefined list
-- View requested permissions and simulated policy clauses
-- Get a **Consent Risk Level** (Low / Medium / High)
-- Clear explanation of *why* the risk exists
+1. Navigate to the client directory:
+   ```bash
+   cd client
+   ```
 
-### 📊 Live Consent Dashboard
-- Displays granted permissions after “installation” (simulated)
-- Shows frequency of permission access
-- Highlights unusual or risky behavior
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-### 🕒 Trust Timeline
-- Timeline of consent-related events
-- Risk escalation alerts
-- Connects **pre-install expectations** with **post-install behavior**
+3. Setup Environment Variables:
+   - Create a `.env` file in the `client` directory.
+   - Add the backend URL:
+     ```env
+     VITE_API_URL=http://localhost:5000/api
+     ```
+     *(Note: For production, use your deployed backend URL)*
 
----
+## Running Locally
 
-## 🧱 Tech Stack
-
-- **Framework:** React (Vite)
-- **Styling:** Tailwind CSS
-- **State Management:** React Hooks
-- **API Communication:** Axios
-- **Environment Config:** Vite environment variables
-
----
-
-## 📁 Project Structure
-
-
-
-📁 Project Structure
-client/
-│
-├── public/
-│   └── favicon.png
-│
-├── src/
-│   ├── components/       # Reusable UI components
-│   ├── pages/            # Risk Preview, Dashboard, Timeline
-│   ├── services/         # API calls
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-│
-├── index.html
-├── tailwind.config.js
-├── postcss.config.js
-├── package.json
-└── README.md
-
-⚙️ Setup & Installation
-1️⃣ Install dependencies
-npm install
-
-2️⃣ Environment Variables
-
-Create a .env file in the client folder:
-
-VITE_API_URL=https://your-backend-url/api
-
-
-Example:
-
-VITE_API_URL=https://consentintel-backend.onrender.com/api
-
-3️⃣ Run locally
+Start the development server:
+```bash
 npm run dev
+```
+The app will typically run at `http://localhost:5173`.
 
+## Build for Production
 
-App will be available at:
-
-http://localhost:5173
-
-4️⃣ Build for production
+To create a production build:
+```bash
 npm run build
+```
+The output will be in the `dist` directory.
 
-🌐 Deployment
-
-This frontend is designed to be deployed as a static site.
-
-Supported Platforms
-
-Vercel ✅
-
-Netlify ✅
-
-Render (Static Site) ✅
-
-Build Settings
-
-Build Command: npm run build
-
-Output Directory: dist
 
 Root Directory: client
