@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import dotenv from 'dotenv';
+dotenv.config();
 import { Shield, AlertTriangle, CheckCircle, ArrowRight, Activity, Smartphone } from 'lucide-react';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = process.env.VITE_API_URL;
 
 export default function Dashboard() {
     const [installedApps, setInstalledApps] = useState([]); // This would need a new endpoint to get ALL installed apps, currently we only have simulation endpoint for single app risk?

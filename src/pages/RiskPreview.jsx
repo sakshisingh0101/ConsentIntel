@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { AlertTriangle, CheckCircle, Smartphone, Info } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-
-const API_URL = 'http://localhost:5000/api';
+import dotenv from 'dotenv';
+dotenv.config();
+const API_URL = process.env.VITE_API_URL;;
 
 export default function RiskPreview() {
     const [apps, setApps] = useState([]);

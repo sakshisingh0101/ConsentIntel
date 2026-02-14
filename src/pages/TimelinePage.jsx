@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { Clock, AlertTriangle, Shield, MousePointer2 } from 'lucide-react';
-
-const API_URL = 'http://localhost:5000/api';
+import dotenv from 'dotenv';
+dotenv.config();
+const API_URL = process.env.VITE_API_URL;
 
 export default function TimelinePage() {
     const { appId } = useParams();
