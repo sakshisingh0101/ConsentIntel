@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams, Link } from 'react-router-dom';
 import { ShieldAlert, Check, X, Shield, Info } from 'lucide-react';
-import dotenv from 'dotenv';
-dotenv.config();
 
 const API_URL = import.meta.env.VITE_API_URL;
 

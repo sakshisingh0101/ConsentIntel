@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import dotenv from 'dotenv';
-dotenv.config();
+
 import { Shield, AlertTriangle, CheckCircle, ArrowRight, Activity, Smartphone } from 'lucide-react';
 
 const API_URL = import.meta.env.VITE_API_URL;
